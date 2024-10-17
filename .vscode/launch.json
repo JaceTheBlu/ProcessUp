@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'ProcessUp'",
+            "name": "Debug executable 'process_engine'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=ProcessUp",
-                    "--package=ProcessUp"
+                    "--bin=process_engine",
+                    "--package=process_engine"
                 ],
                 "filter": {
-                    "name": "ProcessUp",
+                    "name": "process_engine",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'ProcessUp'",
+            "name": "Debug unit tests in executable 'process_engine'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=ProcessUp",
-                    "--package=ProcessUp"
+                    "--bin=process_engine",
+                    "--package=process_engine"
                 ],
                 "filter": {
-                    "name": "ProcessUp",
+                    "name": "process_engine",
                     "kind": "bin"
                 }
             },
